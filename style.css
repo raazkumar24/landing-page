@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 body {
@@ -67,6 +68,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
+main {
+  overflow: hidden;
+}
+
 /* Menu-toggle Styles */
 .menu-toggle {
   display: none;
@@ -81,7 +86,11 @@ nav a:hover {
  .home-container {
   min-height: 100vh;
   padding: 30px;
-  overflow-x: hidden;
+}
+
+.home-container p {
+  letter-spacing: .5px;
+  line-height: 1.4;
 }
 
 .home {
