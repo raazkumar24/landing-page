@@ -18,7 +18,7 @@
 
     <!----------------- animation link ----------------->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!----------------- google font link ----------------->
 
@@ -31,13 +31,9 @@
     <header>
         <a href="#home" class="logo">BigIdea</a>
         <input type="checkbox" id="menu-toggle" style="display: none" />
-        <label
-          for="menu-toggle"
-          class="menu-toggle"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        <label for="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </label>
         <nav>
             <ul>
@@ -51,10 +47,10 @@
 
     <main>
 
-        <section id="home">
+        <section id="home" class="home-container">
             <!----------------- HOME PAGE ----------------->
 
-            <div class="home">
+            <div class="home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                 <div class="left">
                     <h1>
                         Streamline Your Business <br />
@@ -73,14 +69,14 @@
                     </div>
                 </div>
 
-                <div class="right">
+                <div class="right" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                     <img src="./images/pexels-mart-production-7550542.jpg" alt="" />
                 </div>
             </div>
 
             <!----------------- SERVICES ----------------->
 
-            <div class="our-services">
+            <div class="our-services" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
                 <h4>Our Services</h4>
                 <h2>Tailored Solutions for Your Business</h2>
                 <p>
@@ -89,12 +85,12 @@
                 </p>
 
                 <div class="services-container">
-                    <div class="left">
+                    <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
                         <img src="./images/pexels-rdne-7564196.jpg" alt="" />
                     </div>
 
                     <div class="right">
-                        <div class="services">
+                        <div class="services" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
                             <h3>Analytics & Reporting</h3>
                             <p>
                                 Gain valuable insights into your business performance with our
@@ -102,7 +98,7 @@
                             </p>
                         </div>
 
-                        <div class="services">
+                        <div class="services" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
                             <h3>Automation & Workflow</h3>
                             <p>
                                 Streamline your operations and boost productivity with our
@@ -110,7 +106,7 @@
                             </p>
                         </div>
 
-                        <div class="services">
+                        <div class="services" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">
                             <h3>Customer Relationship Management</h3>
                             <p>
                                 Enhance your customer experience and strengthen relationships
@@ -124,14 +120,14 @@
 
             <!----------------- TESTIMONIALS ----------------->
 
-            <div class="testimonials">
+            <div class="testimonials" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
                 <h4>Testimonials</h4>
                 <h2>What Our Clients Say</h2>
                 <p>Hear from our satisfied customers about how our software solutions have
                     transformed their businesses.</p>
 
                 <div class="testimonial-cards">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
                         <p class="name"><i class="fa-regular fa-user"></i> John Doe</p>
                         <p class="title">CEO, Acme Inc.</p>
                         <p class="feedback">"The software solutions provided by this company have been a game-changer
@@ -139,7 +135,7 @@
                             relationships, and drive significant growth."</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
                         <p class="name"><i class="fa-regular fa-user"></i> Sarah Miller</p>
                         <p class="title">CTO, Innovative Tech</p>
                         <p class="feedback">"I highly recommend the software solutions from this company. They have
@@ -147,7 +143,7 @@
                             business performance."</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
                         <p class="name"><i class="fa-regular fa-user"></i> Michael Johnson</p>
                         <p class="title">CFO, Global Solutions</p>
                         <p class="feedback">"The software solutions from this company have been a game-changer for our
@@ -162,41 +158,52 @@
 
     <!-----------FOOTER----------->
 
-        <footer class="footer">
-            <div class="container">
-              <div class="footer-top">
-                <div class="footer-brand">
-                  <h2>BigIdea</h2>
-                  <p>Providing innovative solutions to help your business thrive.</p>
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1400">
+                    <h2>BigIdea</h2>
+                    <p>Providing innovative solutions to help your business thrive.</p>
                 </div>
-                <div class="footer-links">
-                  <h3>Quick Links</h3>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+                <div class="footer-links" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1500">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="footer-contact">
-                  <h3>Contact Us</h3>
-                  <p>123 Business St., City, Country</p>
-                  <p>Email: info@business.com</p>
-                  <p>Phone: +123 456 7890</p>
+                <div class="footer-contact" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1600">
+                    <h3>Contact Us</h3>
+                    <p>123 Business St., City, Country</p>
+                    <p>Email: info@business.com</p>
+                    <p>Phone: +123 456 7890</p>
                 </div>
-              </div>
-              <div class="footer-bottom">
+            </div>
+            <div class="footer-bottom">
                 <p>&copy; 2024 BigIdea. All Rights Reserved.</p>
                 <div class="social-icons">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-              </div>
             </div>
-          </footer>
-          
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+//   offset: 120,  // Adjust offset for triggering animations
+//   duration: 1000,  // Duration of animations
+//   easing: 'ease-in-out',  // Type of easing
+//   once: true,  // Animation happens only once - when you scroll down
+});
+
+    </script>
+
 </body>
 
 </html>
